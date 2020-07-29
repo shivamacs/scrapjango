@@ -1,0 +1,59 @@
+{% load crispy_forms_tags %}
+<html>
+    <head>
+        <title>Scrapjango Spider</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            form {
+                margin: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <div class="jumbotron min-vh-100 m-0 d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <form action="" method="POST">
+                {{ form|crispy }}
+                <center><button id="submit" class="btn btn-success" type="submit">Run spider</button></center>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $("label[for=id_urlchoice]").text('Select Url: ').css('font-weight', 'bold')
+        $('select[name=urlchoice] option:last-child').attr('selected', 'selected')
+        $("#div_id_urlchoice").find('div').css({'display': 'grid', 'grid-template-columns': '8fr 1fr 1fr', 'grid-gap': '5px'}).append('<button style="font-size: 2rem; line-height: 0;" id="add-new" type="button" class="btn btn-secondary btn-sm">+</button>').append('<button id="remove-btn" value="" type="button" class="btn btn-danger">x<form id="remove" method="POST"><input name="remove-url" type="hidden"/></form></button>')
+        $("label[for=id_formatchoice]").text('Select Format: ').css('font-weight', 'bold')
+        $("label[for=id_depth]").text('Select crawler depth: ').css('font-weight', 'bold')
+        $('option[value="5"]').attr('selected', 'selected')
+
+        $('#add-new').on('click', function() {
+            if ($(this).text() == '+')
+            {
+                $("#div_id_urlchoice").append('<form id="add-url-form" method="POST" style="width: 80%; display: grid; grid-template-columns: 9fr 1fr; grid-gap: 10px; margin-top: 10px;">{% csrf_token %}<input id="input-new-url" name="newurl" class="form-control" type="text" placeholder="Enter a url to add" /><button style="line-height: 0;" type="submit" class="btn btn-primary btn-sm">&#9989;</button></form>')
+                $(this).text('-')
+            }
+
+            else
+            {
+                $("#add-url-form").remove()
+                $(this).text('+')
+            }
+        })
+
+        $('#remove-btn').on('click', function(event) {
+            selected_url = $('select[name=urlchoice] option:selected').text()
+            val = $('select[name=urlchoice] option:selected').val()
+            confirmation = confirm('Are you sure you want to delete ' + selected_url + '?')
+            if (confirmation)
+            {
+                $('input[name=remove-url]').attr('value', val)
+                $("#remove").submit()
+            }
+
+        })
+
+    </script>
+</html>

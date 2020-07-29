@@ -1,0 +1,314 @@
+2020-07-29 02:05:53 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: CDScraper)
+2020-07-29 02:05:53 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.6 (default, Jan  8 2020, 19:59:22) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.6.1, Platform Linux-5.4.0-42-generic-x86_64-with-debian-bullseye-sid
+2020-07-29 02:05:53 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'CDScraper', 'CONCURRENT_ITEMS': '100', 'CONCURRENT_REQUESTS': '12', 'CONCURRENT_REQUESTS_PER_DOMAIN': '4', 'DEPTH_LIMIT': '3', 'DEPTH_PRIORITY': 1, 'LOG_FILE': 'logs/default/examsites/eb7eb5fcd11111ea8024df1134ce5627.log', 'NEWSPIDER_MODULE': 'CDScraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['CDScraper.spiders']}
+2020-07-29 02:05:53 [scrapy.extensions.telnet] INFO: Telnet Password: db40c91dd1f65ca3
+2020-07-29 02:05:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-07-29 02:05:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-07-29 02:05:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-07-29 02:05:53 [scrapy.middleware] INFO: Enabled item pipelines:
+['CDScraper.pipelines.CdscraperPipeline']
+2020-07-29 02:05:53 [scrapy.core.engine] INFO: Spider opened
+2020-07-29 02:05:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:05:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-07-29 02:05:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/robots.txt> (referer: None)
+2020-07-29 02:05:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/> (referer: None)
+2020-07-29 02:05:53 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://gate.iitm.ac.in/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-07-29 02:05:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://gate.iitm.ac.in/gate2019/> from <GET http://gate.iitm.ac.in/gate2019>
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://gate.iitd.ac.in/robots.txt> (referer: None)
+2020-07-29 02:05:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.iitm.ac.in:443/robots.txt> from <GET http://www.iitm.ac.in/robots.txt>
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://mtechadm.iitm.ac.in/robots.txt> (referer: None)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/index.php> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/mscadm.php> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/jamqps.php> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/gateqps.php> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/oldqp.php> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitm.ac.in/gate2019/> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://mtechadm.iitm.ac.in> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:05:58 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://jam.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:05:58 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:05:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/intscholarship.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:05:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/gateint.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:06:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jam.iitk.ac.in/> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:06:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/index.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:06:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/eligibility.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:06:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/iposter.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:06:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/brochure.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:06:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.iitm.ac.in:443/robots.txt> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:06:55 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 21 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:06:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://mtechadm.iitm.ac.in/index.php> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:06:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://gate.iitm.ac.in/gate2019/index.php> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:06:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://gate.iitm.ac.in/gate2019/International.php> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:06:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:06:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://gate.iitd.ac.in/poster.php> (referer: http://gate.iitd.ac.in)
+2020-07-29 02:06:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://mtechadm.iitm.ac.in/apply.php> (referer: http://mtechadm.iitm.ac.in)
+2020-07-29 02:06:58 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://coap.iitm.ac.in/robots.txt> (referer: None)
+2020-07-29 02:06:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.iitm.ac.in:443/robots.txt> (failed 2 times): 500 Internal Server Error
+2020-07-29 02:06:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://civil.iitm.ac.in/robots.txt> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:06:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://physics.iitm.ac.in/robots.txt> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:06:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jam.iitk.ac.in/PH.php> (referer: http://jam.iitk.ac.in/)
+2020-07-29 02:06:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jam.iitk.ac.in/admissionProcedure.php> (referer: http://jam.iitk.ac.in/)
+2020-07-29 02:06:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://coap.iitm.ac.in> (referer: http://mtechadm.iitm.ac.in)
+2020-07-29 02:06:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://intapp.iitb.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://intapp.iitb.ac.in/> (referer: http://mtechadm.iitm.ac.in)
+2020-07-29 02:07:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jam.iitk.ac.in/oldUpdates.php> (referer: http://jam.iitk.ac.in/)
+2020-07-29 02:07:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/nanoscience/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:01 [scrapy.core.engine] DEBUG: Crawled (403) <GET http://www.iitk.ac.in/cad/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.iitk.ac.in/cad/>: HTTP status code is not handled or not allowed
+2020-07-29 02:07:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://civil.iitm.ac.in/robots.txt> (failed 2 times): 500 Internal Server Error
+2020-07-29 02:07:03 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.iitm.ac.in:443/robots.txt> (failed 3 times): 500 Internal Server Error
+2020-07-29 02:07:03 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://www.iitm.ac.in:443/robots.txt> (referer: None)
+2020-07-29 02:07:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://physics.iitm.ac.in/robots.txt> (failed 2 times): 500 Internal Server Error
+2020-07-29 02:07:03 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://eal.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/celp/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/doaa/brihaspati> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://web.iitk.ac.in/robots.txt> (failed 1 times): DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:07:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.iitm.ac.in:443/> from <GET http://www.iitm.ac.in>
+2020-07-29 02:07:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eal.iitk.ac.in/> (referer: None)
+2020-07-29 02:07:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://web.iitk.ac.in/robots.txt> (failed 2 times): DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:07:07 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://web.iitk.ac.in/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:07:07 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://web.iitk.ac.in/robots.txt>: DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/python/failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/internet/endpoints.py", line 975, in startConnectionAttempts
+    "no results for hostname lookup: {}".format(self._hostStr)
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:07:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dord/forms> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/directorate> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://web.iitk.ac.in/july14dordn/call-for-proposals> (failed 1 times): DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:07:13 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://oag.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:15 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.iitk.ac.in/new/brochures.html> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:16 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://web.iitk.ac.in/july14iaudit/> (failed 1 times): DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:07:16 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.iitk.ac.in/new/brochures.html>: HTTP status code is not handled or not allowed
+2020-07-29 02:07:17 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://civil.iitm.ac.in/robots.txt> (failed 3 times): 500 Internal Server Error
+2020-07-29 02:07:17 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://civil.iitm.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:17 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://physics.iitm.ac.in/robots.txt> (failed 3 times): 500 Internal Server Error
+2020-07-29 02:07:17 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://physics.iitm.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:17 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.iitk.ac.in/dosa/gym/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://students.iitk.ac.in/robots.txt> from <GET http://students.iitk.ac.in/robots.txt>
+2020-07-29 02:07:17 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.iitm.ac.in:443/robots.txt> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:07:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.iitk.ac.in/dosa/gym/>: HTTP status code is not handled or not allowed
+2020-07-29 02:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/opportunityschool/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://oag.iitk.ac.in/Ldps/> from <GET https://oag.iitk.ac.in/Ldps>
+2020-07-29 02:07:22 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://oag.iitk.ac.in/Oa/Jsp/jmetAdmit/jmetonline/jmet_main.jsp> (referer: None)
+2020-07-29 02:07:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/restricted-holidays-2019> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:22 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://oag.iitk.ac.in/Oa/Jsp/jmetAdmit/jmetonline/jmet_main.jsp>: HTTP status code is not handled or not allowed
+2020-07-29 02:07:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://oag.iitk.ac.in/Ldps/> (referer: None)
+2020-07-29 02:07:22 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://students.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:22 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://iitkanpur.kvs.ac.in/robots.txt> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:07:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://civil.iitm.ac.in/> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:07:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://physics.iitm.ac.in/> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:07:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dord/internal-resources> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.iitm.ac.in:443/robots.txt> (failed 2 times): 500 Internal Server Error
+2020-07-29 02:07:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://students.iitk.ac.in/glidingclub/> from <GET http://students.iitk.ac.in/glidingclub/>
+2020-07-29 02:07:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://students.iitk.ac.in/glidingclub/> (referer: None)
+2020-07-29 02:07:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/publication/index1.php?option=com_content&view=article&id=444> from <GET http://www.iitk.ac.in/dora/publication/publications-by-iitk>
+2020-07-29 02:07:26 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://iitkanpur.kvs.ac.in/robots.txt> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:07:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2020-07-29 02:07:27 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/iitkanpur>
+2020-07-29 02:07:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/robots.txt> (referer: None)
+2020-07-29 02:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dora/publication/index1.php?option=com_content&view=article&id=444> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dora/crowdfund/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:31 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.iitm.ac.in:443/robots.txt> (failed 3 times): 500 Internal Server Error
+2020-07-29 02:07:31 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://www.iitm.ac.in:443/robots.txt> (referer: None)
+2020-07-29 02:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/IITKanpur> (referer: None)
+2020-07-29 02:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://iitk.ac.in/new/student-campus-life> (referer: None)
+2020-07-29 02:07:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/key-administrators> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:42 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://iitkanpur.kvs.ac.in/robots.txt> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:07:42 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://iitkanpur.kvs.ac.in/robots.txt>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:07:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/mou-exchange-ceremony-between-institute-and-airshed> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:43 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://qip.iitd.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:43 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://jeeadv.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:44 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://qip.iitd.ac.in/qipadm2017/> (referer: None)
+2020-07-29 02:07:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.jeeadv.ac.in/> from <GET http://jeeadv.iitk.ac.in/>
+2020-07-29 02:07:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.iitk.ac.in/animalwelfare/> from <GET http://www.iitk.ac.in/animalwelfare>
+2020-07-29 02:07:44 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://qip.iitd.ac.in/qipadm2017/>: HTTP status code is not handled or not allowed
+2020-07-29 02:07:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.iitm.ac.in:443/> (failed 1 times): 500 Internal Server Error
+2020-07-29 02:07:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/incubated-start-ups-developed-padmavati> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/nirf-2020> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://iitkanpur.kvs.ac.in/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:07:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/announcements-archives> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:47 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.jeeadv.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/innovations-on-covid-19> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jeeadv.ac.in/> (referer: None)
+2020-07-29 02:07:50 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://spo.iitk.ac.in/robots.txt> (referer: None)
+2020-07-29 02:07:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/national-carbonaceous-aerosols-programme-ncap-carbonaceous-aerosol-emissions-source-apportionment-and-climate-effects> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/media-coverage> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.iitm.ac.in:443/> (failed 2 times): 500 Internal Server Error
+2020-07-29 02:07:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/developing-prototype-of-a-smart-superconducting-fault-current-limiter-scfclsm-with-three-dimensional-field-and-current-mapping-technology-for-early-fault-and-hot-spot-detection> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://spo.iitk.ac.in/index.html> (referer: None)
+2020-07-29 02:07:54 [scrapy.extensions.logstats] INFO: Crawled 76 pages (at 55 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:07:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/animalwelfare/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/physical-metallurgy-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:07:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/list-of-courses> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/engine-noise-and-vibration> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/funding-options> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/give-back> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:12 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.iitm.ac.in:443/> (failed 3 times): 500 Internal Server Error
+2020-07-29 02:08:12 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://www.iitm.ac.in:443/> (referer: http://gate.iitm.ac.in/)
+2020-07-29 02:08:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/incubated-companies> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.iitm.ac.in:443/>: HTTP status code is not handled or not allowed
+2020-07-29 02:08:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=444> from <GET http://www.iitk.ac.in/dora/publication>
+2020-07-29 02:08:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/patents-ipr> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/success-stories> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=459> from <GET http://www.iitk.ac.in/dora/infrastructure-initiatives>
+2020-07-29 02:08:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=610> from <GET http://www.iitk.ac.in/dora/rajesh-gopakumar>
+2020-07-29 02:08:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=608> from <GET http://www.iitk.ac.in/dora/pooja-sankar>
+2020-07-29 02:08:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/culture-at-iitk> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/sports-facilities> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/powder-metallurgy-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/process-research-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/materials-separation-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=444> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/in-memoriam> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:38 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://web.iitk.ac.in/july14iitkn/> (failed 1 times): DNS lookup failed: no results for hostname lookup: web.iitk.ac.in.
+2020-07-29 02:08:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=459> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/information-for-school-children> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:08:59 [scrapy.extensions.logstats] INFO: Crawled 95 pages (at 19 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:09:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/hindi/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=610> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=608> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/contact> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/vigilance> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/content-submission> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/IITKanpur?ref_src=twsrc%5Etfw> (referer: None)
+2020-07-29 02:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/accessibility> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:22 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.iitk.ac.in/new/index.php/ishita-sengupta> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/webmaster> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.iitk.ac.in/new/index.php/ishita-sengupta>: HTTP status code is not handled or not allowed
+2020-07-29 02:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/srinivas-dharavath> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/ee392a> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/v-m-krushnarao-kotteda> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:33 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/sports.iitk/>
+2020-07-29 02:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/lab-for-biomaterials> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://students.iitk.ac.in/sports/> from <GET http://students.iitk.ac.in/sports/>
+2020-07-29 02:09:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/metal-working-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/particulate-materials-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/phase-stability-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/index.php/pyro-metallurgy-lab> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:00 [scrapy.extensions.logstats] INFO: Crawled 113 pages (at 18 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:10:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://students.iitk.ac.in/sports/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-07-29 02:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/pool> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/cricket> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/football-soccer> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/lawn-tennis> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/taekwondo-club> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/recreational-facilities> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/sports-at-iitk> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://students.iitk.ac.in/sports/> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/cultural-societies> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/eating-places> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/fine-arts-club> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/cultural-societies-music-club> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:00 [scrapy.extensions.logstats] INFO: Crawled 124 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:11:06 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://students.iitk.ac.in/sports/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/dance-club-also-known-as-k-os> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/staff-training> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/research-administration> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://students.iitk.ac.in/sports/>
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 02:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/staff-achievements> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://iitk.ac.in/dora/index1.php?option=com_content&view=article&id=760> from <GET http://iitk.ac.in/dora/k-subramanian-profile>
+2020-07-29 02:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/doad/> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/staff-office-orders> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:23 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2020-07-29 02:11:24 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2020-07-29 02:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/human-resource-and-general-administration-section> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/Directorate> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://iitk.ac.in/dora/index1.php?option=com_content&view=article&id=760> (referer: None)
+2020-07-29 02:11:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=638> from <GET http://www.iitk.ac.in/dora/saurabh-kumar>
+2020-07-29 02:11:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=617> from <GET http://www.iitk.ac.in/dora/amit-agarwal>
+2020-07-29 02:11:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=618> from <GET http://www.iitk.ac.in/dora/prayas>
+2020-07-29 02:11:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/2015-01-28-07-24-20/index1.php?option=com_content&view=article&id=569> from <GET http://www.iitk.ac.in/dora/2015-01-28-07-24-20/dora-timeline>
+2020-07-29 02:11:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/alumni-in-news> from <GET http://www.iitk.ac.in/dora/alumni-in-news>
+2020-07-29 02:11:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.iitk.ac.in/dora/index1.php?option=com_content&view=article&id=760> from <GET http://www.iitk.ac.in/dora/k-subramanian-profile>
+2020-07-29 02:11:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/eligibility> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/featured-facilities-innovation-incubation> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.iitk.ac.in/new/technology-development-initiative> (referer: http://www.iitk.ac.in/)
+2020-07-29 02:11:55 [scrapy.extensions.logstats] INFO: Crawled 136 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:12:53 [scrapy.extensions.logstats] INFO: Crawled 136 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 02:12:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 18,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 2,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 6,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 10,
+ 'downloader/request_bytes': 67387,
+ 'downloader/request_count': 185,
+ 'downloader/request_method_count/GET': 185,
+ 'downloader/response_bytes': 9203046,
+ 'downloader/response_count': 169,
+ 'downloader/response_status_count/200': 113,
+ 'downloader/response_status_count/301': 5,
+ 'downloader/response_status_count/302': 15,
+ 'downloader/response_status_count/403': 1,
+ 'downloader/response_status_count/404': 18,
+ 'downloader/response_status_count/500': 17,
+ 'dupefilter/filtered': 34497,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2020, 7, 28, 20, 42, 55, 650879),
+ 'httperror/response_ignored_count': 7,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'httperror/response_ignored_status_count/404': 5,
+ 'httperror/response_ignored_status_count/500': 1,
+ 'log_count/DEBUG': 193,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 24,
+ 'memusage/max': 205627392,
+ 'memusage/startup': 77312000,
+ 'request_depth_max': 3,
+ 'response_received_count': 136,
+ 'retry/count': 25,
+ 'retry/max_reached': 8,
+ 'retry/reason_count/500 Internal Server Error': 12,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 5,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 8,
+ "robotstxt/exception_count/<class 'twisted.internet.error.DNSLookupError'>": 1,
+ "robotstxt/exception_count/<class 'twisted.web._newclient.ResponseNeverReceived'>": 1,
+ 'robotstxt/forbidden': 2,
+ 'robotstxt/request_count': 23,
+ 'robotstxt/response_count': 21,
+ 'robotstxt/response_status_count/200': 4,
+ 'robotstxt/response_status_count/404': 13,
+ 'robotstxt/response_status_count/500': 4,
+ 'scheduler/dequeued': 150,
+ 'scheduler/dequeued/memory': 150,
+ 'scheduler/enqueued': 2389,
+ 'scheduler/enqueued/memory': 2389,
+ 'start_time': datetime.datetime(2020, 7, 28, 20, 35, 53, 465553)}
+2020-07-29 02:12:55 [scrapy.core.engine] INFO: Spider closed (shutdown)

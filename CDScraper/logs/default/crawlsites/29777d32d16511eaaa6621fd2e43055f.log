@@ -1,0 +1,1222 @@
+2020-07-29 12:01:43 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: CDScraper)
+2020-07-29 12:01:43 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.6 (default, Jan  8 2020, 19:59:22) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.6.1, Platform Linux-5.4.0-42-generic-x86_64-with-debian-bullseye-sid
+2020-07-29 12:01:43 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'CDScraper', 'CONCURRENT_ITEMS': '100', 'CONCURRENT_REQUESTS': '12', 'CONCURRENT_REQUESTS_PER_DOMAIN': '4', 'DEPTH_LIMIT': '5', 'DEPTH_PRIORITY': 1, 'LOG_FILE': 'logs/default/crawlsites/29777d32d16511eaaa6621fd2e43055f.log', 'NEWSPIDER_MODULE': 'CDScraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['CDScraper.spiders']}
+2020-07-29 12:01:43 [scrapy.extensions.telnet] INFO: Telnet Password: 597cd3737f88e102
+2020-07-29 12:01:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-07-29 12:01:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-07-29 12:01:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-07-29 12:01:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['CDScraper.pipelines.CdscraperPipeline']
+2020-07-29 12:01:43 [scrapy.core.engine] INFO: Spider opened
+2020-07-29 12:01:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 12:01:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2020-07-29 12:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/robots.txt> (referer: None)
+2020-07-29 12:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/> (referer: None)
+2020-07-29 12:01:45 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.ielts.org/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-07-29 12:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us> (referer: https://www.ielts.org/)
+2020-07-29 12:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/prepare-for-your-ielts-test> (referer: https://www.ielts.org/)
+2020-07-29 12:01:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/robots.txt> from <GET http://www.cambridgeenglish.org/robots.txt>
+2020-07-29 12:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/privacy-policy> (referer: https://www.ielts.org/)
+2020-07-29 12:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/how-do-i-register> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/on-test-day> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/publications> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/robots.txt> (referer: None)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/ensuring-quality-and-fairness> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://takeielts.britishcouncil.org/robots.txt> (referer: None)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/how-we-develop-the-test> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://takeielts.britishcouncil.org/> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 12:01:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://takeielts.britishcouncil.org/>: HTTP status code is not handled or not allowed
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores> (referer: https://www.ielts.org/)
+2020-07-29 12:01:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/> from <GET http://www.cambridgeenglish.org/>
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/robots.txt> (referer: None)
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2020-07-29 12:01:46 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/IELTSOfficial?utm_source=website&utm_medium=homepage&utm_campaign=facebook>
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.linkedin.com/robots.txt> (referer: None)
+2020-07-29 12:01:46 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.linkedin.com/company/ielts-official/>
+2020-07-29 12:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/sitemap> (referer: https://www.ielts.org/)
+2020-07-29 12:01:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/user/IELTSOfficial?utm_source=website&utm_medium=homepage&utm_campaign=youtube> (referer: https://www.ielts.org/)
+2020-07-29 12:01:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/> (referer: https://www.ielts.org/)
+2020-07-29 12:01:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/> (referer: None)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/copyright-notice> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/how-ielts-is-scored> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/legal> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/disclaimer> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/accessibility> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/about-us> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/new-zealand> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/canada> (referer: https://www.ielts.org/)
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/australia> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/test-security> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-prospective-test-centers> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-test-takers> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/teaching/examiner-recruitment-and-training> (referer: https://www.ielts.org/)
+2020-07-29 12:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/teaching/ielts-for-teachers> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-support> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-proposals> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/ielts-online-tutorial> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/common-european-framework> (referer: https://www.ielts.org/)
+2020-07-29 12:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/processing-and-verifying-ielts-results> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/ielts-scoring-in-detail> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/show-you-accept-ielts> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/setting-ielts-entry-scores> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/why-accept-ielts-scores> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/grants-and-awards> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/resitting-the-test> (referer: https://www.ielts.org/)
+2020-07-29 12:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/getting-your-results> (referer: https://www.ielts.org/)
+2020-07-29 12:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/ielts-complaints-policy> (referer: https://www.ielts.org/)
+2020-07-29 12:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/test-format> (referer: https://www.ielts.org/)
+2020-07-29 12:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/special-requirements> (referer: https://www.ielts.org/)
+2020-07-29 12:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/video-call-speaking-test> (referer: https://www.ielts.org/)
+2020-07-29 12:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/sample-test-questions> (referer: https://www.ielts.org/)
+2020-07-29 12:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/two-types-of-ielts-test> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-indicator> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-work> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/paper-or-computer> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-study> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/test-statistics> (referer: https://www.ielts.org/)
+2020-07-29 12:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/contact-us> (referer: https://www.ielts.org/)
+2020-07-29 12:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/special-requirements/learning-difficulties> (referer: https://www.ielts.org/book-a-test/special-requirements)
+2020-07-29 12:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news> (referer: https://www.ielts.org/)
+2020-07-29 12:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-introduction> (referer: https://www.ielts.org/)
+2020-07-29 12:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/special-requirements/hearing-or-speaking-difficulties> (referer: https://www.ielts.org/book-a-test/special-requirements)
+2020-07-29 12:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/special-requirements/visual-difficulties> (referer: https://www.ielts.org/book-a-test/special-requirements)
+2020-07-29 12:01:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ieltsindicator.com/robots.txt> (referer: None)
+2020-07-29 12:02:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ieltsindicator.com/> (referer: https://www.ielts.org/what-is-ielts/ielts-indicator)
+2020-07-29 12:02:02 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET javascript:/robots.txt>: Unsupported URL scheme 'javascript': no handler available for that scheme
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/python/failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 45, in mustbe_deferred
+    result = f(*args, **kw)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/handlers/__init__.py", line 70, in download_request
+    (scheme, self._notconfigured[scheme]))
+scrapy.exceptions.NotSupported: Unsupported URL scheme 'javascript': no handler available for that scheme
+2020-07-29 12:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-2.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:06 [scrapy.core.scraper] ERROR: Error downloading <GET javascript:__doPostBack('pagecontent_0$BtnPagerNext','')>
+scrapy.exceptions.NotSupported: Unsupported URL scheme 'javascript': no handler available for that scheme
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/twisted/python/failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 45, in mustbe_deferred
+    result = f(*args, **kw)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/handlers/__init__.py", line 70, in download_request
+    (scheme, self._notconfigured[scheme]))
+scrapy.exceptions.NotSupported: Unsupported URL scheme 'javascript': no handler available for that scheme
+2020-07-29 12:02:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-2.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-3.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-3.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-1.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-1.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-06.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-06.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-07.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-07.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-4.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-4.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/samples/listening/form-completion.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/samples/listening/form-completion.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/ielts-complaints-form> (referer: https://www.ielts.org/book-a-test/ielts-complaints-policy)
+2020-07-29 12:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2019/computer-delivered-ielts-embraced-by-test-takers-around-the-world> (referer: https://www.ielts.org/news)
+2020-07-29 12:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-08.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-08.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-05.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-05.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/files/115043_ielts_speaking_sample_part_1_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/files/115055_ielts_speaking_sample_part_3_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/files/115043_ielts_speaking_sample_part_1_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/files/115055_ielts_speaking_sample_part_3_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2019/ielts-grows-to-three-and-a-half-million-a-year> (referer: https://www.ielts.org/news)
+2020-07-29 12:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2019/healthcare-professionals-headed-for-the-uk--ielts-is-for-you> (referer: https://www.ielts.org/news)
+2020-07-29 12:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2019/ielts-reappointed-as-a-language-test-trusted-by-the-uk-government-for-visas> (referer: https://www.ielts.org/news)
+2020-07-29 12:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/2019-caroline-clapham-masters-award-announcement> (referer: https://www.ielts.org/news)
+2020-07-29 12:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/universities-and-students-welcome-ielts-indicator-around-the-world> (referer: https://www.ielts.org/news)
+2020-07-29 12:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/ielts-whistle-blowing-policy> (referer: https://www.ielts.org/info-pages/contact-us)
+2020-07-29 12:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/research/grants-and-awards> from <GET https://www.ielts.org/teaching-and-research/grants-and-awards>
+2020-07-29 12:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/research/test-statistics> from <GET https://www.ielts.org/teaching-and-research/test-statistics>
+2020-07-29 12:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/research/research-reports> from <GET https://www.ielts.org/teaching-and-research/research-reports>
+2020-07-29 12:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/demographic-data> (referer: https://www.ielts.org/research/test-statistics)
+2020-07-29 12:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/test-taker-performance> (referer: https://www.ielts.org/research/test-statistics)
+2020-07-29 12:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/ielts-overall-band-scores-on-linkedin> (referer: https://www.ielts.org/book-a-test/getting-your-results)
+2020-07-29 12:02:20 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://results.ieltsessentials.com/robots.txt> (referer: None)
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/additional-trf-form> (referer: https://www.ielts.org/book-a-test/getting-your-results)
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/computer-delivered-ielts> (referer: https://www.ielts.org/book-a-test/getting-your-results)
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/usa/ielts-for-organizations/ielts-best-practices-award> (referer: https://www.ielts.org/research/grants-and-awards)
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ielts.britishcouncil.org/robots.txt> (referer: None)
+2020-07-29 12:02:21 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://ielts.britishcouncil.org/CheckResults.aspx>
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://results.ieltsessentials.com/> (referer: https://www.ielts.org/book-a-test/getting-your-results)
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/ielts-masters-award> (referer: https://www.ielts.org/research/grants-and-awards)
+2020-07-29 12:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/ielts-ea-award> (referer: https://www.ielts.org/research/grants-and-awards)
+2020-07-29 12:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/about-the-test/test-format> from <GET https://www.ielts.org/about-the-test/test-format-in-detail>
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/files/115049_ielts_speaking_sample_part_2_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/show-you-accept-ielts/registration-form/register-forms/step1> (referer: https://www.ielts.org/ielts-for-organisations/processing-and-verifying-ielts-results)
+2020-07-29 12:02:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/files/115049_ielts_speaking_sample_part_2_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-09.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/info-pages/contact-us> from <GET http://www.ielts.org/info-pages/contact-us>
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/online-tutorial> (referer: https://www.ielts.org/ielts-for-organisations/ielts-online-tutorial)
+2020-07-29 12:02:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-09.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://ielts.ucles.org.uk/robots.txt> (referer: None)
+2020-07-29 12:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.coe.int/robots.txt> from <GET http://www.coe.int/robots.txt>
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ielts.ucles.org.uk/ielts-trf/appform.jsp> (referer: https://www.ielts.org/ielts-for-organisations/processing-and-verifying-ielts-results)
+2020-07-29 12:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/ielts_online_rr_2017-3> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.ielts.org/research/research-reports?page=2> from <GET https://www.ielts.org/api/sitecore/Reports/PageNextClick>
+2020-07-29 12:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2017-3.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/ielts-partnership-research-paper-4> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2017-3.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/ielts-partnership-research-paper-2> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports?page=2> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://127.0.0.1/robots.txt> from <GET https://www.coe.int/robots.txt>
+2020-07-29 12:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts-research-partner-paper-4.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/ielts_online_rr_2017-4> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts-research-partner-paper-4.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://127.0.0.1/robots.txt> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ielts.ucles.org.uk/ielts-trf/index.jsp> (referer: https://www.ielts.org/ielts-for-organisations/processing-and-verifying-ielts-results)
+2020-07-29 12:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/ielts_online_rr_2017-5> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://127.0.0.1/robots.txt> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2017-5.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2017-5.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/ielts-partnership-research-paper-3> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:24 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://127.0.0.1/robots.txt> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:24 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://www.coe.int/robots.txt>: Connection was refused by other side: 111: Connection refused.
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2017-4.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.coe.int/t/dg4/linguistic/cadre1_en.asp> from <GET http://www.coe.int/t/dg4/linguistic/cadre1_en.asp>
+2020-07-29 12:02:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2017-4.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/online-series-2018-1> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://127.0.0.1/t/dg4/linguistic/cadre1_en.asp> from <GET https://www.coe.int/t/dg4/linguistic/cadre1_en.asp>
+2020-07-29 12:02:25 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://127.0.0.1/robots.txt> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2018-1.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:25 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://127.0.0.1/robots.txt> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts_online_rr_2018-1.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/online-series-2019-1> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:26 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://127.0.0.1/robots.txt> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:26 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://127.0.0.1/robots.txt>: Connection was refused by other side: 111: Connection refused.
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/online-series-2019-1.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts-research-partner-paper-3.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/online-series-2019-1.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts-research-partner-paper-3.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/online-series-2019-2> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:26 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://127.0.0.1/t/dg4/linguistic/cadre1_en.asp> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports/online-series-2019-3> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:26 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://127.0.0.1/t/dg4/linguistic/cadre1_en.asp> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/guidelines-for-applying> (referer: https://www.ielts.org/research/research-proposals)
+2020-07-29 12:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/about-ielts-usa> (referer: https://www.ielts.org/usa)
+2020-07-29 12:02:27 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://127.0.0.1/t/dg4/linguistic/cadre1_en.asp> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:27 [scrapy.core.scraper] ERROR: Error downloading <GET https://127.0.0.1/t/dg4/linguistic/cadre1_en.asp>
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+2020-07-29 12:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/2019-3-chappell_et_al_layout.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores/ro/united-states-of-america/all/all/all> from <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores/RO/United-States-of-America/All/All/All%20>
+2020-07-29 12:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.gov.uk/robots.txt> (referer: None)
+2020-07-29 12:02:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/2019-3-chappell_et_al_layout.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.immigration.govt.nz/robots.txt> (referer: None)
+2020-07-29 12:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.gov.uk/government/publications/register-of-licensed-sponsors-students> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom)
+2020-07-29 12:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/iatefl-scholarship> (referer: https://www.ielts.org/teaching/ielts-for-teachers)
+2020-07-29 12:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/jang_et_al_layout.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom/ukvi-cancellations-and-transfers-policy> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom)
+2020-07-29 12:02:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/jang_et_al_layout.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom/ielts-life-skills> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom)
+2020-07-29 12:02:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.immigration.govt.nz/new-zealand-visas> (referer: https://www.ielts.org/ielts-for-organisations/why-accept-ielts-scores)
+2020-07-29 12:02:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores/ro/united-states-of-america/all/all/all> (referer: https://www.ielts.org/usa)
+2020-07-29 12:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom/ielts-for-ukvi-academic-delivered-on-computer> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom)
+2020-07-29 12:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom/ielts-used-for-uk-visa-applications> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom)
+2020-07-29 12:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations/ielts-usa-stakeholder-e-newsletter> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations/higher-education-advisory-council> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-institutions/ielts-guide-for-institutions-us.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-uk.ashx> (referer: https://www.ielts.org/teaching/ielts-for-teachers)
+2020-07-29 12:02:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-institutions/ielts-guide-for-institutions-us.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-uk.ashx> (referer: https://www.ielts.org/teaching/ielts-for-teachers)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/quality-and-fairness/quality-and-fairness-2015-us.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/us-files/ieltsusa-professional-development-complimentary-services-guide.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/quality-and-fairness/quality-and-fairness-2015-us.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations/online-webinars> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations/meet-ielts-usa-staff> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-us.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-us.ashx> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations/ielts-best-practices-award> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://go.ieltsusa.org/robots.txt> (referer: None)
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations/us-recognition-portal> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-test-takers/results> (referer: https://www.ielts.org/usa/ielts-for-test-takers)
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/us-files/ielts-usa-stakeholder-contact-information.ashx?la=en> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/us-files/ielts-usa-stakeholder-contact-information.ashx?la=en> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://go.ieltsusa.org/USA.Status.Updates> (referer: https://www.ielts.org/usa/ielts-for-test-takers)
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-test-takers/online-registration-in-the-usa> (referer: https://www.ielts.org/usa/ielts-for-test-takers)
+2020-07-29 12:02:36 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET http://www.facebook.com/IELTSOfficial/>
+2020-07-29 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/us-files/us-recognition-list.ashx?la=en> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+2020-07-29 12:02:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/us-files/us-recognition-list.ashx?la=en> (referer: https://www.ielts.org/usa/ielts-for-organizations)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-prospective-test-centers/become-a-test-center-in-the-usa> (referer: https://www.ielts.org/usa/ielts-for-prospective-test-centers)
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.chinaielts.org/robots.txt> (referer: None)
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.chinaielts.org/> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://tracking.cirrusinsight.com/robots.txt> (referer: None)
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/united-states-of-america/ukvi> (referer: https://www.ielts.org/usa/ielts-for-test-takers)
+2020-07-29 12:02:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://cambridgeenglish.formstack.com/forms/ielts_results_service_application> from <GET https://tracking.cirrusinsight.com/3c9aaee9-6592-408c-9e79-85c5b543dfb4/cambridgeenglish-formstack-com-forms-ielts-results-service-application>
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/an-update-from-ielts> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.who.int/robots.txt> (referer: None)
+2020-07-29 12:02:37 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public>
+2020-07-29 12:02:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.ielts.org/en-us/ielts-for-organisations/new-ielts-results-service%20> from <GET https://tracking.cirrusinsight.com/3c9aaee9-6592-408c-9e79-85c5b543dfb4/ielts-org-en-us-ielts-for-organisations-new-ielts-results-service-20>
+2020-07-29 12:02:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://ielts.ucles.org.uk/ielts-trf/appform.jsp> from <GET https://tracking.cirrusinsight.com/3c9aaee9-6592-408c-9e79-85c5b543dfb4/ielts-ucles-org-uk-ielts-trf-appform-jsp>
+2020-07-29 12:02:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://cambridgeenglish.formstack.com/robots.txt> (referer: None)
+2020-07-29 12:02:38 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://cambridgeenglish.formstack.com/forms/ielts_results_service_application>
+2020-07-29 12:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/book-a-test/find-a-test-location/location-list/nepal/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-prospective-test-centers/on-site-testing> (referer: https://www.ielts.org/usa/ielts-for-prospective-test-centers)
+2020-07-29 12:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/ielts-for-organisations/new-ielts-results-service%20> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/chile/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/ielts-test-arrangements-in-china-for-july-2020> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/whistle-blower-report-form> (referer: https://www.ielts.org/about-the-test/test-security)
+2020-07-29 12:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/vietnam/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/zimbabwe/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/uruguay/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:43 [scrapy.extensions.logstats] INFO: Crawled 177 pages (at 177 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 12:02:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/vietnam/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/united-kingdom/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/united-arab-emirates/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/united-arab-emirates/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/ukraine/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/turkey/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/turkey/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/tunisia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/tunisia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/ukraine/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/thailand/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/thailand/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/taiwan-china/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/research-reports/ielts-research-partner-paper-2.ashx> (referer: https://www.ielts.org/research/research-reports)
+2020-07-29 12:02:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/research-reports/ielts-research-partner-paper-2.ashx> (referer: https://www.ielts.org/research/research-reports)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:02:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/united-kingdom/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/taiwan-china/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/switzerland/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/sri-lanka/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/sri-lanka/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/spain/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:02:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/slovenia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/sweden/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/slovenia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/spain/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/slovakia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/singapore/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/sierra-leone/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/singapore/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/sierra-leone/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/switzerland/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/book-a-test/find-a-test-location/location-list/saudi-arabia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/serbia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/russia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/russia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/book-a-test/find-a-test-location/location-list/saudi-arabia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/serbia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/qatar/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/romania/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/qatar/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/romania/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/poland/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/poland/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/portugal/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/portugal/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/pakistan/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/philippines/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/philippines/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/pakistan/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/oman/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/north-macedonia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/north-macedonia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/book-a-test/find-a-test-location/location-list/new-zealand/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/oman/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/netherlands/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/norway/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/nigeria/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/nepal/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/nepal/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/new-zealand/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/morocco/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/myanmar/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/mongolia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/montenegro/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/mauritius/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/myanmar/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/mexico/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/malta/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/malaysia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/malaysia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/mauritius/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/luxembourg/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/luxembourg/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/lithuania/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:43 [scrapy.extensions.logstats] INFO: Crawled 250 pages (at 73 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 12:03:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/lebanon/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/latvia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/lebanon/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/laos/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/kuwait/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/korea-republic-of/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/korea-republic-of/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/kazakhstan/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/kazakhstan/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/latvia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/jordan/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/jordan/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/japan/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/japan/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/jamaica/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/italy/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/ireland/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/indonesia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:03:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/jamaica/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/italy/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/ireland/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/india/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/hungary/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/hungary/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/indonesia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/hong-kong-sar-china/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/macao-sar-china/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/greece/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/greece/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/hong-kong-sar-china/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/india/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/germany/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/georgia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/germany/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/france/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/fiji/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/france/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/georgia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/estonia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/egypt/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/fiji/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/ecuador/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/ecuador/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/finland/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/egypt/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/denmark/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/czech-republic/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/cyprus/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/czech-republic/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/denmark/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/croatia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/cyprus/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/colombia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/china/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/colombia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/croatia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/book-a-test/find-a-test-location/location-list/cambodia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/cambodia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/bulgaria/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us/book-a-test/find-a-test-location/location-list/canada/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/bulgaria/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/belgium/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/brazil/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/belarus/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/brunei-darussalam/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/bangladesh/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/bangladesh/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/bahrain/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.surveymonkey.com/robots.txt> (referer: None)
+2020-07-29 12:04:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.surveymonkey.com/r/GMSB7ZH> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/azerbaijan/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/belarus/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.homeaffairs.gov.au/robots.txt> from <GET http://www.border.gov.au/robots.txt>
+2020-07-29 12:04:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/austria/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:43 [scrapy.extensions.logstats] INFO: Crawled 323 pages (at 73 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 12:04:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/australia/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.homeaffairs.gov.au/robots.txt> from <GET http://www.homeaffairs.gov.au/robots.txt>
+2020-07-29 12:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/australia/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/argentina/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/azerbaijan/ukvi> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/australia/tv> from <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/Australia/tv>
+2020-07-29 12:04:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.cic.gc.ca/robots.txt> from <GET http://www.cic.gc.ca/robots.txt>
+2020-07-29 12:04:46 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.homeaffairs.gov.au/robots.txt> (referer: None)
+2020-07-29 12:04:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.homeaffairs.gov.au/Trav/Visa-1> from <GET http://www.border.gov.au/Trav/Visa-1>
+2020-07-29 12:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/argentina/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.homeaffairs.gov.au/robots.txt> from <GET http://www.homeaffairs.gov.au/robots.txt>
+2020-07-29 12:04:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/about-the-test/test-format> from <GET http://www.ielts.org/about-the-test/test-format>
+2020-07-29 12:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cic.gc.ca/robots.txt> (referer: None)
+2020-07-29 12:04:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/new-zealand/tv> from <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/New-Zealand/tv>
+2020-07-29 12:04:47 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.homeaffairs.gov.au/robots.txt> (referer: None)
+2020-07-29 12:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/austria/tv> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/ielts-partners-launch-new-online-test-to-support-students-impacted-by-covid-19-restrictions> (referer: https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community)
+2020-07-29 12:04:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/about-the-test/sample-test-questions> from <GET http://www.ielts.org/about-the-test/sample-test-questions>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.cic.gc.ca/english/immigrate/skilled/language.asp> from <GET http://www.cic.gc.ca/english/immigrate/skilled/language.asp>
+2020-07-29 12:04:48 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.britishcouncil.org/robots.txt> (referer: None)
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores> from <GET http://www.ielts.org/about-the-test/who-accepts-ielts-scores>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.homeaffairs.gov.au/Trav/Visa-1> from <GET http://www.homeaffairs.gov.au/Trav/Visa-1>
+2020-07-29 12:04:48 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.britishcouncil.org/> (referer: https://www.ielts.org/info-pages/about-us)
+2020-07-29 12:04:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://support.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 12:04:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.britishcouncil.org/>: HTTP status code is not handled or not allowed
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/book-a-test/prepare-for-your-ielts-test> from <GET http://www.ielts.org/book-a-test/prepare-for-your-ielts-test>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/footer/data-protection/cookie-policy/> from <GET https://www.cambridgeenglish.org/footer/data-protection/cookie-policy/index.aspx>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/about-the-test/how-ielts-is-scored> from <GET http://www.ielts.org/about-the-test/how-ielts-is-scored>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.idp.com/global/> from <GET https://www.idp.com/global/studyabroad>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/become-candidate/eligibility/language-requirements.html> from <GET https://www.cic.gc.ca/english/immigrate/skilled/language.asp>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/footer/data-protection/cookie-policy/> from <GET http://www.cambridgeenglish.org/footer/data-protection/cookie-policy/>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder> from <GET https://www.homeaffairs.gov.au/Trav/Visa-1>
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.registrarysoffice.admin.cam.ac.uk/robots.txt> from <GET http://www.registrarysoffice.admin.cam.ac.uk/robots.txt>
+2020-07-29 12:04:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.canada.ca/robots.txt> (referer: None)
+2020-07-29 12:04:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements.html> from <GET https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/become-candidate/eligibility/language-requirements.html>
+2020-07-29 12:04:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements.html> (referer: None)
+2020-07-29 12:04:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/new-zealand)
+2020-07-29 12:04:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://support.cambridgeenglish.org/hc/en-gb> (referer: https://www.ielts.org/info-pages/about-us)
+2020-07-29 12:04:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/footer/sitemap/> from <GET https://www.cambridgeenglish.org/footer/sitemap/index.aspx>
+2020-07-29 12:04:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/footer/data-protection/cookie-policy/> (referer: None)
+2020-07-29 12:04:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.immigration.govt.nz/> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/new-zealand)
+2020-07-29 12:04:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location/location-list/canada/tv> (referer: https://www.ielts.org/what-is-ielts/ielts-for-migration/canada)
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/footer/terms-and-conditions/> from <GET https://www.cambridgeenglish.org/footer/terms-and-conditions/index.aspx>
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.governanceandcompliance.admin.cam.ac.uk/robots.txt> from <GET https://www.registrarysoffice.admin.cam.ac.uk/robots.txt>
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/footer/sitemap/> from <GET http://www.cambridgeenglish.org/footer/sitemap/>
+2020-07-29 12:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/contact-us/online-enquiry-form> (referer: https://www.ielts.org/policy/accessibility)
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/footer/terms-and-conditions/> from <GET http://www.cambridgeenglish.org/footer/terms-and-conditions/>
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/footer/accessibility-and-standards/> from <GET https://www.cambridgeenglish.org/footer/accessibility-and-standards/index.aspx>
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/footer/data-protection/> from <GET https://www.cambridgeenglish.org/footer/data-protection/index.aspx>
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.governanceandcompliance.admin.cam.ac.uk/robots.txt> from <GET http://www.governanceandcompliance.admin.cam.ac.uk/robots.txt>
+2020-07-29 12:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgefoundation.jp/robots.txt> (referer: None)
+2020-07-29 12:04:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/footer/accessibility-and-standards/> from <GET http://www.cambridgeenglish.org/footer/accessibility-and-standards/>
+2020-07-29 12:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/footer/sitemap/> (referer: None)
+2020-07-29 12:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/footer/terms-and-conditions/> (referer: None)
+2020-07-29 12:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgefoundation.jp/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/verifiers> from <GET http://www.cambridgeenglish.org/verifiers>
+2020-07-29 12:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/footer/accessibility-and-standards/> (referer: None)
+2020-07-29 12:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.governanceandcompliance.admin.cam.ac.uk/robots.txt> (referer: None)
+2020-07-29 12:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.admissionstesting.org/robots.txt> (referer: None)
+2020-07-29 12:04:51 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://immi.homeaffairs.gov.au/robots.txt> (referer: None)
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/verifiers/> from <GET https://www.cambridgeenglish.org/verifiers>
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.registrarysoffice.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking> from <GET http://www.registrarysoffice.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking>
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/verifiers/> from <GET http://www.cambridgeenglish.org/verifiers/>
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.governanceandcompliance.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking> from <GET https://www.registrarysoffice.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking>
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/cmp/verifiers/> from <GET https://www.cambridgeenglish.org/verifiers/>
+2020-07-29 12:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.admissionstesting.org/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.governanceandcompliance.admin.cam.ac.uk/robots.txt> from <GET http://www.governanceandcompliance.admin.cam.ac.uk/robots.txt>
+2020-07-29 12:04:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://cambridgeenglish.org/information-for-schools/preparation-centres/> from <GET http://preparationcentre.cambridgeenglish.org/robots.txt>
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.governanceandcompliance.admin.cam.ac.uk/robots.txt> (referer: None)
+2020-07-29 12:04:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/cmp/verifiers/> from <GET http://www.cambridgeenglish.org/cmp/verifiers/>
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://centres.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 12:04:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.governanceandcompliance.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking> from <GET http://www.governanceandcompliance.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking>
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.occupationalenglishtest.org/robots.txt> (referer: None)
+2020-07-29 12:04:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/information-for-schools/preparation-centres/> from <GET http://cambridgeenglish.org/information-for-schools/preparation-centres/>
+2020-07-29 12:04:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (307) to <GET http://centres.cambridgeenglish.org/irj/portal> from <GET https://centres.cambridgeenglish.org/>
+2020-07-29 12:04:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/information-for-preparation-centres/> from <GET https://www.cambridgeenglish.org/information-for-schools/preparation-centres/>
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cambridgeenglishschools.org/robots.txt> (referer: None)
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/cmp/verifiers/> (referer: None)
+2020-07-29 12:04:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/information-for-preparation-centres/> from <GET http://www.cambridgeenglish.org/information-for-preparation-centres/>
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://cambridgeenglishonline.org/robots.txt> (referer: None)
+2020-07-29 12:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.governanceandcompliance.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking> (referer: None)
+2020-07-29 12:04:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://cambridgeenglishonline.org/Views/UserManagement/Login.aspx> from <GET https://cambridgeenglishonline.org>
+2020-07-29 12:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cambridgeenglishschools.org/> (referer: None)
+2020-07-29 12:04:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://centres.cambridgeenglish.org/irj/portal> from <GET http://centres.cambridgeenglish.org/irj/portal>
+2020-07-29 12:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://michiganassessment.org/robots.txt> (referer: None)
+2020-07-29 12:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/information-for-preparation-centres/> (referer: None)
+2020-07-29 12:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://centres.cambridgeenglish.org/irj/portal> (referer: None)
+2020-07-29 12:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://cambridgeenglishonline.org/Views/UserManagement/Login.aspx> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.occupationalenglishtest.org/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://support.cambridgeenglish.org/hc> from <GET https://support.cambridgeenglish.org/home>
+2020-07-29 12:04:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://support.cambridgeenglish.org/hc/en-gb> from <GET https://support.cambridgeenglish.org/hc>
+2020-07-29 12:04:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://cambridgeenglish.org/information-for-schools/preparation-centres/> from <GET http://preparationcentre.cambridgeenglish.org>
+2020-07-29 12:04:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bsigroup.com/robots.txt> from <GET http://www.bsigroup.co.uk/robots.txt>
+2020-07-29 12:04:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeassessment.org.uk/robots.txt> from <GET http://www.cambridgeassessment.org.uk/robots.txt>
+2020-07-29 12:04:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://penfriends.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 12:04:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/robots.txt> from <GET http://cambridgeenglish.org/robots.txt>
+2020-07-29 12:04:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://michiganassessment.org/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://penfriends.cambridgeenglish.org/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/information-for-schools/preparation-centres/> from <GET http://cambridgeenglish.org/information-for-schools/preparation-centres/>
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/information-for-preparation-centres/> from <GET https://www.cambridgeenglish.org/information-for-schools/preparation-centres/>
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cambridge.org/robots.txt> (referer: None)
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridge.org/gb/cambridgeenglish> from <GET http://www.cambridge.org/gb/cambridgeenglish>
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeassessment.org.uk/robots.txt> (referer: None)
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.alte.org/robots.txt> (referer: None) ['partial']
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.englishprofile.org/robots.txt> (referer: None)
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/information-for-preparation-centres/> from <GET http://www.cambridgeenglish.org/information-for-preparation-centres/>
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bsigroup.com/robots.txt> (referer: None)
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/> from <GET https://www.cambridgeenglish.org/help/index.aspx>
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeassessment.org.uk/> from <GET http://www.cambridgeassessment.org.uk/>
+2020-07-29 12:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/information-for-preparation-centres/> (referer: None)
+2020-07-29 12:04:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/> from <GET http://www.cambridgeenglish.org/help/>
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.englishprofile.org> (referer: None)
+2020-07-29 12:04:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.alte.org/> from <GET http://www.alte.org/>
+2020-07-29 12:04:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bsigroup.com/> from <GET http://www.bsigroup.co.uk/>
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeassessment.org.uk/> (referer: None)
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.careers.idp.com/robots.txt> (referer: None)
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/terms-of-use/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/disclaimer/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:57 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/CambridgeEnglishTeaching>
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/privacy-policy/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/about/> from <GET https://www.cambridgeenglish.org/about/index.aspx>
+2020-07-29 12:04:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/learning-english> from <GET http://www.cambridgeenglish.org/learning-english>
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.careers.idp.com/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/test-your-english/> from <GET https://www.cambridgeenglish.org/test-your-english>
+2020-07-29 12:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bsigroup.com/robots.txt> (referer: None)
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/about/> from <GET http://www.cambridgeenglish.org/about/>
+2020-07-29 12:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bsigroup.com/> (referer: None)
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/exams-and-tests/linguaskill/> from <GET https://www.cambridgeenglish.org/exams-and-tests/linguaskill>
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/learning-english/games-social/quiz-your-english/> from <GET http://www.cambridgeenglish.org/learning-english/games-social/quiz-your-english/>
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/> from <GET https://www.cambridgeenglish.org/teaching-english>
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/test-your-english/> from <GET http://www.cambridgeenglish.org/test-your-english/>
+2020-07-29 12:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ieltsessentials.com/robots.txt> (referer: None)
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/exams-and-tests/qualifications/> from <GET https://www.cambridgeenglish.org/exams-and-tests/qualifications>
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/exams-and-tests/linguaskill/> from <GET http://www.cambridgeenglish.org/exams-and-tests/linguaskill/>
+2020-07-29 12:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/about/> (referer: None)
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/> from <GET http://www.cambridgeenglish.org/teaching-english/>
+2020-07-29 12:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/test-your-english/> (referer: None)
+2020-07-29 12:04:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/exams-and-tests/qualifications/> from <GET http://www.cambridgeenglish.org/exams-and-tests/qualifications/>
+2020-07-29 12:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.alte.org/> (referer: None)
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://writeandimprove.com/robots.txt> (referer: None)
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/learning-english/games-social/quiz-your-english/> (referer: None)
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://writeandimprove.com/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/supporting-learners/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/embed/nh0WAj1-7mo> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ieltsessentials.com/prepare> from <GET https://www.ieltsessentials.com/global/prepare>
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/industry-events/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/cmp/novel-coronavirus-2019/> from <GET https://www.cambridgeenglish.org/cmp/novel-coronavirus-2019>
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/special-considerations/> from <GET https://www.cambridgeenglish.org/help/special-considerations/index.aspx>
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ieltsessentials.com/about/computer-delivered-ielts> from <GET https://www.ieltsessentials.com/global/ieltshome/computer-delivered-ielts>
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/special-requirements/> from <GET https://www.cambridgeenglish.org/help/special-requirements/index.aspx>
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/supporting-teachers/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/cmp/novel-coronavirus-2019/> from <GET http://www.cambridgeenglish.org/cmp/novel-coronavirus-2019/>
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/news/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/find-a-university/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/special-considerations/> from <GET http://www.cambridgeenglish.org/help/special-considerations/>
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/complaints/> from <GET https://www.cambridgeenglish.org/help/complaints/index.aspx>
+2020-07-29 12:04:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/special-requirements/> from <GET http://www.cambridgeenglish.org/help/special-requirements/>
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/enquiries-and-appeals/> from <GET https://www.cambridgeenglish.org/help/enquiries-and-appeals/index.aspx>
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/malpractice/> from <GET https://www.cambridgeenglish.org/help/malpractice/index.aspx>
+2020-07-29 12:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ieltsessentials.com/prepare> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/corporate-social-responsibility/> from <GET https://www.cambridgeenglish.org/help/corporate-social-responsibility/index.aspx>
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/help/lost-certificates/> from <GET https://www.cambridgeenglish.org/help/lost-certificates/index.aspx>
+2020-07-29 12:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ieltsessentials.com/about/computer-delivered-ielts> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/ieltsnewsletter/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/complaints/> from <GET http://www.cambridgeenglish.org/help/complaints/>
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/corporate-social-responsibility/> from <GET http://www.cambridgeenglish.org/help/corporate-social-responsibility/>
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/malpractice/> from <GET http://www.cambridgeenglish.org/help/malpractice/>
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/enquiries-and-appeals/> from <GET http://www.cambridgeenglish.org/help/enquiries-and-appeals/>
+2020-07-29 12:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/special-considerations/> (referer: None)
+2020-07-29 12:05:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/help/lost-certificates/> from <GET http://www.cambridgeenglish.org/help/lost-certificates/>
+2020-07-29 12:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/news/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:05:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/upcoming-info-sessions/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder> (referer: None)
+2020-07-29 12:05:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/corporate-social-responsibility/> (referer: None)
+2020-07-29 12:05:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/special-requirements/> (referer: None)
+2020-07-29 12:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/complaints/> (referer: None)
+2020-07-29 12:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/enquiries-and-appeals/> (referer: None)
+2020-07-29 12:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/malpractice/> (referer: None)
+2020-07-29 12:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/events/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/resources-for-teachers/webinars/> from <GET https://www.cambridgeenglish.org/teaching-english/resources-for-teachers/webinars/index.aspx>
+2020-07-29 12:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/resources-for-teachers/general-english-resources/> from <GET https://www.cambridgeenglish.org/teaching-english/resources-for-teachers/general-english-resources/index.aspx>
+2020-07-29 12:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/research-grants/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/blog/> (referer: https://www.cambridgeenglish.org/)
+2020-07-29 12:05:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/index.aspx> from <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/Index.aspx>
+2020-07-29 12:05:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/resources-for-teachers/> from <GET https://www.cambridgeenglish.org/teaching-english/resources-for-teachers/index.aspx>
+2020-07-29 12:05:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/professional-development/become-a-cambridge-english-examiner/> from <GET https://www.cambridgeenglish.org/teaching-english/professional-development/become-a-cambridge-english-examiner/index.aspx>
+2020-07-29 12:05:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/help/lost-certificates/> (referer: None)
+2020-07-29 12:05:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/professional-development/> from <GET https://www.cambridgeenglish.org/teaching-english/professional-development/index.aspx>
+2020-07-29 12:05:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-teaching-framework/> from <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-teaching-framework/index.aspx>
+2020-07-29 12:05:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/train-the-trainer/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/train-the-trainer/index.aspx>
+2020-07-29 12:05:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/requirements/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/professional-development/become-a-cambridge-english-examiner/> from <GET http://www.cambridgeenglish.org/teaching-english/professional-development/become-a-cambridge-english-examiner/>
+2020-07-29 12:05:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/old-certificate-in-emi-skills/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/old-certificate-in-emi-skills/index.aspx>
+2020-07-29 12:05:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/resources-for-teachers/webinars/> from <GET http://www.cambridgeenglish.org/teaching-english/resources-for-teachers/webinars/>
+2020-07-29 12:05:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/resources-for-teachers/general-english-resources/> from <GET http://www.cambridgeenglish.org/teaching-english/resources-for-teachers/general-english-resources/>
+2020-07-29 12:05:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://opac.acer.edu.au/robots.txt> (referer: None)
+2020-07-29 12:05:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/research/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/research/latest/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/index.aspx> from <GET http://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/index.aspx>
+2020-07-29 12:05:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-teaching-framework/> from <GET http://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-teaching-framework/>
+2020-07-29 12:05:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/professional-development/> from <GET http://www.cambridgeenglish.org/teaching-english/professional-development/>
+2020-07-29 12:05:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://opac.acer.edu.au/IDP_drie/index.html> (referer: None)
+2020-07-29 12:05:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/client-teams/uk/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/client-teams/canada/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/client-teams/new-zealand/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/old-certificate-in-emi-skills/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/old-certificate-in-emi-skills/>
+2020-07-29 12:05:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/train-the-trainer/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/train-the-trainer/>
+2020-07-29 12:05:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/client-teams/usa/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/teaching-english/resources-for-teachers/general-english-resources/> (referer: None)
+2020-07-29 12:05:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/> from <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/index.aspx>
+2020-07-29 12:05:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-teaching-framework/> (referer: None)
+2020-07-29 12:05:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/certificate-in-emi-skills/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/old-certificate-in-emi-skills/>
+2020-07-29 12:05:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/why-partner/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/hotcourses-and-idp/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/teaching-english/professional-development/become-a-cambridge-english-examiner/> (referer: None)
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/client-teams/australia/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/partner-with-idp/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/> from <GET http://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/>
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/train-the-trainer/> (referer: None)
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/contact-us/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/current-vacancies/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/certificate-in-emi-skills/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/certificate-in-emi-skills/>
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/language-for-teaching/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/language-for-teaching/index.aspx>
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/teaching-english/professional-development/> (referer: None)
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-s/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-s/index.aspx>
+2020-07-29 12:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/teaching-english/professional-development/cambridge-english-trainer-framework/> (referer: None)
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/index.aspx>
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-p/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-p/index.aspx>
+2020-07-29 12:05:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/certificate-in-emi-skills/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/certificate-in-emi-skills/>
+2020-07-29 12:05:13 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/language-for-teaching/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/language-for-teaching/>
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-s/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-s/>
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/tkt/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/tkt/index.aspx>
+2020-07-29 12:05:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/board-of-directors/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/delta/> from <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/delta/index.aspx>
+2020-07-29 12:05:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/english-language-teaching-idp/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/our-people/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/leadership-team/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:14 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/certificate-in-emi-skills/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/certificate-in-emi-skills/>
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-p/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/celt-p/>
+2020-07-29 12:05:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/> from <GET http://www.cambridgeenglish.org/teaching-english/teaching-qualifications/institutions/>
+2020-07-29 12:05:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/about-idp/story/> (referer: https://www.idp.com/partners/ielts/)
+2020-07-29 12:05:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 18,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 7,
+ 'downloader/exception_type_count/scrapy.exceptions.NotSupported': 2,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 9,
+ 'downloader/request_bytes': 361128,
+ 'downloader/request_count': 592,
+ 'downloader/request_method_count/GET': 592,
+ 'downloader/response_bytes': 63949908,
+ 'downloader/response_count': 581,
+ 'downloader/response_status_count/200': 428,
+ 'downloader/response_status_count/301': 123,
+ 'downloader/response_status_count/302': 16,
+ 'downloader/response_status_count/307': 1,
+ 'downloader/response_status_count/403': 4,
+ 'downloader/response_status_count/404': 9,
+ 'dupefilter/filtered': 31662,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2020, 7, 29, 6, 35, 16, 398646),
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/403': 2,
+ 'log_count/DEBUG': 598,
+ 'log_count/ERROR': 34,
+ 'log_count/INFO': 15,
+ 'memusage/max': 163856384,
+ 'memusage/startup': 82968576,
+ 'request_depth_max': 3,
+ 'response_received_count': 441,
+ 'retry/count': 6,
+ 'retry/max_reached': 3,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 6,
+ "robotstxt/exception_count/<class 'scrapy.exceptions.NotSupported'>": 1,
+ "robotstxt/exception_count/<class 'twisted.internet.error.ConnectionRefusedError'>": 2,
+ 'robotstxt/forbidden': 7,
+ 'robotstxt/request_count': 51,
+ 'robotstxt/response_count': 48,
+ 'robotstxt/response_status_count/200': 37,
+ 'robotstxt/response_status_count/403': 2,
+ 'robotstxt/response_status_count/404': 9,
+ 'scheduler/dequeued': 526,
+ 'scheduler/dequeued/memory': 526,
+ 'scheduler/enqueued': 5946,
+ 'scheduler/enqueued/memory': 5946,
+ 'spider_exceptions/NotSupported': 29,
+ 'start_time': datetime.datetime(2020, 7, 29, 6, 31, 43, 487129)}
+2020-07-29 12:05:16 [scrapy.core.engine] INFO: Spider closed (shutdown)

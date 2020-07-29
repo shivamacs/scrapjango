@@ -1,0 +1,822 @@
+2020-07-29 12:00:21 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: CDScraper)
+2020-07-29 12:00:21 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.6 (default, Jan  8 2020, 19:59:22) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.6.1, Platform Linux-5.4.0-42-generic-x86_64-with-debian-bullseye-sid
+2020-07-29 12:00:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'CDScraper', 'CONCURRENT_ITEMS': '100', 'CONCURRENT_REQUESTS': '12', 'CONCURRENT_REQUESTS_PER_DOMAIN': '4', 'DEPTH_LIMIT': '5', 'DEPTH_PRIORITY': 1, 'LOG_FILE': 'logs/default/crawlsites/f7d8964ed16411eab434a32b11d68df8.log', 'NEWSPIDER_MODULE': 'CDScraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['CDScraper.spiders']}
+2020-07-29 12:00:21 [scrapy.extensions.telnet] INFO: Telnet Password: 6424c583503910ad
+2020-07-29 12:00:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-07-29 12:00:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-07-29 12:00:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-07-29 12:00:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['CDScraper.pipelines.CdscraperPipeline']
+2020-07-29 12:00:21 [scrapy.core.engine] INFO: Spider opened
+2020-07-29 12:00:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 12:00:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-07-29 12:00:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/robots.txt> (referer: None)
+2020-07-29 12:00:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/> (referer: None)
+2020-07-29 12:00:23 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.ielts.org/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-07-29 12:00:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us> (referer: https://www.ielts.org/)
+2020-07-29 12:00:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-study> (referer: https://www.ielts.org/)
+2020-07-29 12:00:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration> (referer: https://www.ielts.org/)
+2020-07-29 12:00:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/robots.txt> from <GET http://www.cambridgeenglish.org/robots.txt>
+2020-07-29 12:00:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/privacy-policy> (referer: https://www.ielts.org/)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/robots.txt> (referer: None)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-introduction> (referer: https://www.ielts.org/)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-work> (referer: https://www.ielts.org/)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news> (referer: https://www.ielts.org/)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://takeielts.britishcouncil.org/robots.txt> (referer: None)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/contact-us> (referer: https://www.ielts.org/)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-indicator> (referer: https://www.ielts.org/)
+2020-07-29 12:00:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.linkedin.com/robots.txt> (referer: None)
+2020-07-29 12:00:25 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.linkedin.com/company/ielts-official/>
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/resitting-the-test> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://takeielts.britishcouncil.org/> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2020-07-29 12:00:26 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/IELTSOfficial?utm_source=website&utm_medium=homepage&utm_campaign=facebook>
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/getting-your-results> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/> from <GET http://www.cambridgeenglish.org/>
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/sitemap> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/copyright-notice> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://takeielts.britishcouncil.org/>: HTTP status code is not handled or not allowed
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/robots.txt> (referer: None)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/special-requirements> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/legal> (referer: https://www.ielts.org/)
+2020-07-29 12:00:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/about-us> (referer: https://www.ielts.org/)
+2020-07-29 12:00:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/> (referer: None)
+2020-07-29 12:00:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/user/IELTSOfficial?utm_source=website&utm_medium=homepage&utm_campaign=youtube> (referer: https://www.ielts.org/)
+2020-07-29 12:00:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom> (referer: https://www.ielts.org/)
+2020-07-29 12:00:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/new-zealand> (referer: https://www.ielts.org/)
+2020-07-29 12:00:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/accessibility> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/disclaimer> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/australia> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-prospective-test-centers> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-organizations> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/canada> (referer: https://www.ielts.org/)
+2020-07-29 12:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa> (referer: https://www.ielts.org/)
+2020-07-29 12:00:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/teaching/examiner-recruitment-and-training> (referer: https://www.ielts.org/)
+2020-07-29 12:00:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/teaching/ielts-for-teachers> (referer: https://www.ielts.org/)
+2020-07-29 12:00:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-support> (referer: https://www.ielts.org/)
+2020-07-29 12:00:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-test-takers> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/test-statistics> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-reports> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/ielts-online-tutorial> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/common-european-framework> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/research-proposals> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/processing-and-verifying-ielts-results> (referer: https://www.ielts.org/)
+2020-07-29 12:00:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/show-you-accept-ielts> (referer: https://www.ielts.org/)
+2020-07-29 12:00:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/setting-ielts-entry-scores> (referer: https://www.ielts.org/)
+2020-07-29 12:00:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/research/grants-and-awards> (referer: https://www.ielts.org/)
+2020-07-29 12:00:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/why-accept-ielts-scores> (referer: https://www.ielts.org/)
+2020-07-29 12:00:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/on-test-day> (referer: https://www.ielts.org/)
+2020-07-29 12:00:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/ielts-complaints-policy> (referer: https://www.ielts.org/)
+2020-07-29 12:00:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/find-a-test-location> (referer: https://www.ielts.org/)
+2020-07-29 12:00:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/prepare-for-your-ielts-test> (referer: https://www.ielts.org/)
+2020-07-29 12:00:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/how-do-i-register> (referer: https://www.ielts.org/)
+2020-07-29 12:00:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/publications> (referer: https://www.ielts.org/)
+2020-07-29 12:00:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/test-security> (referer: https://www.ielts.org/)
+2020-07-29 12:00:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/how-we-develop-the-test> (referer: https://www.ielts.org/)
+2020-07-29 12:00:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/ielts-for-organisations/ielts-scoring-in-detail> (referer: https://www.ielts.org/)
+2020-07-29 12:00:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores> (referer: https://www.ielts.org/)
+2020-07-29 12:00:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/sample-test-questions> (referer: https://www.ielts.org/)
+2020-07-29 12:00:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cambridge.org/robots.txt> (referer: None)
+2020-07-29 12:00:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridge.org/gb/cambridgeenglish/catalog/cambridge-english-exams-ielts/official-ielts-practice-materials-2/official-ielts-practice-materials-2-dvd> from <GET http://www.cambridge.org/gb/cambridgeenglish/catalog/cambridge-english-exams-ielts/official-ielts-practice-materials-2/official-ielts-practice-materials-2-dvd>
+2020-07-29 12:00:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/ensuring-quality-and-fairness> (referer: https://www.ielts.org/)
+2020-07-29 12:00:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/test-format> (referer: https://www.ielts.org/)
+2020-07-29 12:00:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/video-call-speaking-test> (referer: https://www.ielts.org/)
+2020-07-29 12:00:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/two-types-of-ielts-test> (referer: https://www.ielts.org/)
+2020-07-29 12:00:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/book-a-test/ielts-complaints-form> (referer: https://www.ielts.org/book-a-test/ielts-complaints-policy)
+2020-07-29 12:00:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/how-ielts-is-scored> (referer: https://www.ielts.org/)
+2020-07-29 12:00:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/paper-or-computer> (referer: https://www.ielts.org/)
+2020-07-29 12:00:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/whistle-blower-report-form> (referer: https://www.ielts.org/about-the-test/test-security)
+2020-07-29 12:00:36 [scrapy.core.engine] DEBUG: Crawled (520) <GET https://www.cambridge.org/gb/cambridgeenglish/catalog/cambridge-english-exams-ielts/official-ielts-practice-materials-2/official-ielts-practice-materials-2-dvd> (referer: None)
+2020-07-29 12:00:36 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <520 https://www.cambridge.org/gb/cambridgeenglish/catalog/cambridge-english-exams-ielts/official-ielts-practice-materials-2/official-ielts-practice-materials-2-dvd>: HTTP status code is not handled or not allowed
+2020-07-29 12:00:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-3.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:00:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-3.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:00:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-teachers/ielts-guide-for-teachers-life-skills-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:00:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-teachers/ielts-guide-for-teachers-life-skills-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:00:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-teachers/ielts-guide-for-teachers-life-skills-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:00:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-teachers/ielts-guide-for-teachers-life-skills-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:00:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-2.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:00:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-2.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-urdu.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-urdu.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-05.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-05.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-06.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-06.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.ielts.org/teaching/examiner-recruitment-and-training> from <GET https://www.ielts.org/teaching-and-research/examiner-recruitment-and-training>
+2020-07-29 12:01:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-4.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-4.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/files/115049_ielts_speaking_sample_part_2_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/files/115049_ielts_speaking_sample_part_2_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/files/115055_ielts_speaking_sample_part_3_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/files/115055_ielts_speaking_sample_part_3_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/files/115043_ielts_speaking_sample_part_1_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/files/115043_ielts_speaking_sample_part_1_recording.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-08.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-08.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/samples/listening/form-completion.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-1.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-07.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/samples/listening/form-completion.ashx?la=en> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/listening-sample-task-type-1.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-07.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-tagalog.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-tagalog.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-turkish.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-english-uk.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-turkish.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-english-uk.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-simplified-chinese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-simplified-chinese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/results-verification-service/ielts-results-verification-brochure-2014-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/results-verification-service/ielts-results-verification-brochure-2014-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:21 [scrapy.extensions.logstats] INFO: Crawled 93 pages (at 93 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 12:01:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-arabic.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/life-skills-guide-for-test-takers-and-agents/ielts-life-skills-guide-arabic.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/quality-and-fairness/quality-and-fairness-2015-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-09.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+2020-07-29 12:01:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/quality-and-fairness/quality-and-fairness-2015-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/about-the-test//-/media/files/ielts-sample-tasks-recording-09.ashx> (referer: https://www.ielts.org/about-the-test/sample-test-questions)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-institutions/ielts-guide-for-institutions-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-institutions/ielts-guide-for-institutions-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-institutions/ielts-guide-for-institutions-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-institutions/ielts-guide-for-institutions-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:29 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2020-07-29 12:01:29 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2020-07-29 12:01:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-agents/ielts-guide-for-agents-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-agents/ielts-guide-for-agents-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-agents/ielts-guide-for-agents-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-agents/ielts-guide-for-agents-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-vietnamese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-vietnamese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/quality-and-fairness/quality-and-fairness-2015-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/quality-and-fairness/quality-and-fairness-2015-us.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-traditional-chinese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-traditional-chinese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/guide-for-teachers/ielts-guide-for-teachers-uk.ashx?la=en> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-spanish.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-spanish.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-simplified-chinese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-simplified-chinese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-portuguese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-portuguese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-english-us.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-english-us.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-korean.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-korean.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+Traceback (most recent call last):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/shivam/Documents/dscrawler/CDScraper/CDScraper/spiders/CdSpider.py", line 61, in parse
+    for link in response.css('a'):
+  File "/home/shivam/anaconda3/lib/python3.7/site-packages/scrapy/http/response/__init__.py", line 99, in css
+    raise NotSupported("Response content isn't text")
+scrapy.exceptions.NotSupported: Response content isn't text
+2020-07-29 12:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/-/media/publications/information-for-candidates/ielts-information-for-candidates-japanese.ashx> (referer: https://www.ielts.org/about-the-test/publications)
+2020-07-29 12:01:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 2,
+ 'downloader/request_bytes': 86719,
+ 'downloader/request_count': 115,
+ 'downloader/request_method_count/GET': 115,
+ 'downloader/response_bytes': 64101327,
+ 'downloader/response_count': 115,
+ 'downloader/response_status_count/200': 108,
+ 'downloader/response_status_count/301': 4,
+ 'downloader/response_status_count/403': 2,
+ 'downloader/response_status_count/520': 1,
+ 'dupefilter/filtered': 5107,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2020, 7, 29, 6, 31, 49, 409774),
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'httperror/response_ignored_status_count/520': 1,
+ 'log_count/DEBUG': 118,
+ 'log_count/ERROR': 37,
+ 'log_count/INFO': 13,
+ 'memusage/max': 124510208,
+ 'memusage/startup': 82984960,
+ 'request_depth_max': 3,
+ 'response_received_count': 111,
+ 'robotstxt/forbidden': 2,
+ 'robotstxt/request_count': 8,
+ 'robotstxt/response_count': 8,
+ 'robotstxt/response_status_count/200': 7,
+ 'robotstxt/response_status_count/403': 1,
+ 'scheduler/dequeued': 108,
+ 'scheduler/dequeued/memory': 108,
+ 'scheduler/enqueued': 661,
+ 'scheduler/enqueued/memory': 661,
+ 'spider_exceptions/NotSupported': 37,
+ 'start_time': datetime.datetime(2020, 7, 29, 6, 30, 21, 739794)}
+2020-07-29 12:01:49 [scrapy.core.engine] INFO: Spider closed (shutdown)

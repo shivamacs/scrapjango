@@ -1,0 +1,123 @@
+2020-07-29 00:07:38 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: CDScraper)
+2020-07-29 00:07:38 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.6 (default, Jan  8 2020, 19:59:22) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.6.1, Platform Linux-5.4.0-42-generic-x86_64-with-debian-bullseye-sid
+2020-07-29 00:07:38 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'CDScraper', 'CONCURRENT_ITEMS': '100', 'CONCURRENT_REQUESTS': '12', 'CONCURRENT_REQUESTS_PER_DOMAIN': '4', 'DEPTH_LIMIT': '5', 'DEPTH_PRIORITY': 1, 'LOG_FILE': 'logs/default/examsites/672e4ac0d10111ea8ededfeab4059461.log', 'NEWSPIDER_MODULE': 'CDScraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['CDScraper.spiders']}
+2020-07-29 00:07:38 [scrapy.extensions.telnet] INFO: Telnet Password: 06de95d0a49c4172
+2020-07-29 00:07:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-07-29 00:07:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-07-29 00:07:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-07-29 00:07:38 [scrapy.middleware] INFO: Enabled item pipelines:
+['CDScraper.pipelines.CdscraperPipeline']
+2020-07-29 00:07:38 [scrapy.core.engine] INFO: Spider opened
+2020-07-29 00:07:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:07:38 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6033
+2020-07-29 00:07:38 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.du.ac.in/robots.txt> (referer: None)
+2020-07-29 00:07:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/uploads/COVID-19/> (referer: None)
+2020-07-29 00:07:39 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.du.ac.in/du/uploads/COVID-19/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-07-29 00:07:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/uploads/COVID-19/teaching.html> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/uploads/COVID-19/task-force.html> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/uploads/COVID-19/index.html> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://ioe.du.ac.in/robots.txt/> from <GET http://ioe.du.ac.in/robots.txt>
+2020-07-29 00:07:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.du.ac.in/du/> from <GET http://www.du.ac.in/du>
+2020-07-29 00:07:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://app.du.ac.in/robots.txt> (referer: None)
+2020-07-29 00:07:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/uploads/COVID-19/admissions.html> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/uploads/COVID-19/examination.html> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/index.php?page=advertisement> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:07:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ioe.du.ac.in/robots.txt/> (referer: None)
+2020-07-29 00:08:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://app.du.ac.in/covid19/> from <GET http://app.du.ac.in/covid19>
+2020-07-29 00:08:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.du.ac.in/du/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=26753&cntnt01returnid=83> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 00:08:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.instagram.com/robots.txt> (referer: None)
+2020-07-29 00:08:07 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.instagram.com/univofdelhi/>
+2020-07-29 00:08:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.du.ac.in/du/index.php?page=tenders-quotations> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:08:18 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.du.ac.in/du/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=26828&cntnt01returnid=83> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 00:08:18 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.du.ac.in/du/uploads/COVID-19/examhelpdesk.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 00:08:41 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2020-07-29 00:08:45 [scrapy.core.engine] DEBUG: Crawled (400) <GET https://forms.gle/robots.txt> (referer: None)
+2020-07-29 00:08:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ioe.du.ac.in/> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:08:45 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2020-07-29 00:08:46 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 15 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:09:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://app.du.ac.in/covid19/index.php/pmcare/app/create> from <GET http://app.du.ac.in/covid19/>
+2020-07-29 00:09:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.du.ac.in/du/uploads/COVID-19/datesheets.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 00:09:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://docs.google.com/forms/d/e/1FAIpQLSekq6NP4vqtqh0_wsnVwfCoC99Rrn52LkMvjfdSgtjDgw4Y9g/viewform?usp=send_form> from <GET https://forms.gle/dtSpetio5Gq6b5cZ8>
+2020-07-29 00:09:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://exam.du.ac.in/robots.txt> (referer: None)
+2020-07-29 00:09:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.du.ac.in/du/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=26817&cntnt01returnid=83> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 00:09:20 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://internshala.com/robots.txt> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-07-29 00:09:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://vle.du.ac.in/robots.txt> (referer: None)
+2020-07-29 00:09:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://exam.du.ac.in/PG-datesheets.html> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:09:41 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:09:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://internshala.com/robots.txt> (referer: None)
+2020-07-29 00:09:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://internshala.com/internships/work-from-home-jobs?utm_source=univ_rel&utm_medium=Delhi_Univ_Association2> from <GET https://internshala.com/i/du-virtual-internship>
+2020-07-29 00:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vle.du.ac.in/> (referer: http://www.du.ac.in/du/uploads/COVID-19/)
+2020-07-29 00:13:47 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:15:13 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:16:46 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:18:22 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:18:48 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:19:52 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:20:45 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:24:16 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:24:45 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:27:06 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:34:21 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:35:35 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:35:39 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:38:28 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:38:47 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 00:39:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 7,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 1,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 6,
+ 'downloader/request_bytes': 9131,
+ 'downloader/request_count': 32,
+ 'downloader/request_method_count/GET': 32,
+ 'downloader/response_bytes': 482752,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 17,
+ 'downloader/response_status_count/301': 3,
+ 'downloader/response_status_count/302': 3,
+ 'downloader/response_status_count/400': 1,
+ 'downloader/response_status_count/404': 2,
+ 'dupefilter/filtered': 712,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2020, 7, 28, 19, 9, 1, 949761),
+ 'log_count/DEBUG': 34,
+ 'log_count/INFO': 27,
+ 'memusage/max': 123674624,
+ 'memusage/startup': 77078528,
+ 'request_depth_max': 2,
+ 'response_received_count': 20,
+ 'retry/count': 6,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 6,
+ 'robotstxt/forbidden': 1,
+ 'robotstxt/request_count': 8,
+ 'robotstxt/response_count': 8,
+ 'robotstxt/response_status_count/200': 5,
+ 'robotstxt/response_status_count/400': 1,
+ 'robotstxt/response_status_count/404': 2,
+ 'scheduler/dequeued': 23,
+ 'scheduler/dequeued/memory': 23,
+ 'scheduler/enqueued': 1132,
+ 'scheduler/enqueued/memory': 1132,
+ 'start_time': datetime.datetime(2020, 7, 28, 18, 37, 38, 772321)}
+2020-07-29 00:39:01 [scrapy.core.engine] INFO: Spider closed (shutdown)

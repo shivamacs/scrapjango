@@ -1,0 +1,80 @@
+2020-07-29 11:28:47 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: CDScraper)
+2020-07-29 11:28:47 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.6 (default, Jan  8 2020, 19:59:22) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.6.1, Platform Linux-5.4.0-42-generic-x86_64-with-debian-bullseye-sid
+2020-07-29 11:28:47 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'CDScraper', 'CONCURRENT_ITEMS': '100', 'CONCURRENT_REQUESTS': '12', 'CONCURRENT_REQUESTS_PER_DOMAIN': '4', 'DEPTH_LIMIT': '5', 'DEPTH_PRIORITY': 1, 'LOG_FILE': 'logs/default/crawlsites/8fe110bad16011eaa15929019b30f152.log', 'NEWSPIDER_MODULE': 'CDScraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['CDScraper.spiders']}
+2020-07-29 11:28:47 [scrapy.extensions.telnet] INFO: Telnet Password: 70499801aabdbbc5
+2020-07-29 11:28:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-07-29 11:28:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-07-29 11:28:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-07-29 11:28:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['CDScraper.pipelines.CdscraperPipeline']
+2020-07-29 11:28:47 [scrapy.core.engine] INFO: Spider opened
+2020-07-29 11:28:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-29 11:28:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-07-29 11:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/robots.txt> (referer: None)
+2020-07-29 11:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/> (referer: None)
+2020-07-29 11:28:49 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.ielts.org/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-07-29 11:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/en-us> (referer: https://www.ielts.org/)
+2020-07-29 11:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/publications> (referer: https://www.ielts.org/)
+2020-07-29 11:28:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/robots.txt> from <GET http://www.cambridgeenglish.org/robots.txt>
+2020-07-29 11:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news> (referer: https://www.ielts.org/)
+2020-07-29 11:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/test-security> (referer: https://www.ielts.org/)
+2020-07-29 11:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/ensuring-quality-and-fairness> (referer: https://www.ielts.org/)
+2020-07-29 11:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/contact-us> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/robots.txt> (referer: None)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/robots.txt> (referer: None)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/who-accepts-ielts-scores> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.cambridgeenglish.org/> from <GET http://www.cambridgeenglish.org/>
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/sample-test-questions> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://takeielts.britishcouncil.org/robots.txt> (referer: None)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/how-ielts-is-scored> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/how-we-develop-the-test> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/privacy-policy> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://takeielts.britishcouncil.org/> (referer: https://www.ielts.org/)
+2020-07-29 11:28:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://takeielts.britishcouncil.org/>: HTTP status code is not handled or not allowed
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.linkedin.com/robots.txt> (referer: None)
+2020-07-29 11:28:52 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.linkedin.com/company/ielts-official/>
+2020-07-29 11:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/sitemap> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2020-07-29 11:28:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/IELTSOfficial?utm_source=website&utm_medium=homepage&utm_campaign=facebook>
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.idp.com/partners/ielts/> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/legal> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/about-the-test/test-format> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/copyright-notice> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/robots.txt> (referer: None)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/info-pages/about-us> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/accessibility> (referer: https://www.ielts.org/)
+2020-07-29 11:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/united-kingdom> (referer: https://www.ielts.org/)
+2020-07-29 11:28:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/policy/disclaimer> (referer: https://www.ielts.org/)
+2020-07-29 11:28:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/new-zealand> (referer: https://www.ielts.org/)
+2020-07-29 11:28:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/australia> (referer: https://www.ielts.org/)
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/news/2020/covid19-information-for-our-global-test-taker-community> (referer: https://www.ielts.org/)
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cambridgeenglish.org/> (referer: None)
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/what-is-ielts/ielts-for-migration/canada> (referer: https://www.ielts.org/)
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/user/IELTSOfficial?utm_source=website&utm_medium=homepage&utm_campaign=youtube> (referer: https://www.ielts.org/)
+2020-07-29 11:28:55 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2020-07-29 11:28:55 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2020-07-29 11:28:55 [scrapy.crawler] INFO: Received SIGTERM twice, forcing unclean shutdown
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa> (referer: https://www.ielts.org/)
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-prospective-test-centers> (referer: https://www.ielts.org/)
+2020-07-29 11:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ielts.org/usa/ielts-for-test-takers> (referer: https://www.ielts.org/)
