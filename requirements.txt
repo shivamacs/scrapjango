@@ -12,6 +12,6 @@ requests==2.24.0
 Scrapy==1.6.0
 scrapy-djangoitem==1.1.1
 sqlparse==0.3.1
-urllib3==1.25.10
+urllib3==1.26.5
 virtualenv==16.6.0
 tabulate==0.8.7
